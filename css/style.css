@@ -12142,12 +12142,12 @@ textarea.form-control {
 .mouse-icon {
   width: 80px;
   height: 80px;
-  border: 1px solid #cb9b55;
+  border: 1px solid black;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  background: #cb9b55;
+  background: black;
   cursor: pointer;
   position: relative;
   text-align: center;
