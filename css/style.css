@@ -4548,9 +4548,9 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  width: 11%;
+  width: 13%;
   @media (max-width: 768px) {
-    width:25%;
+    width:27%;
   }
 }
 .navbar-brand:hover,
