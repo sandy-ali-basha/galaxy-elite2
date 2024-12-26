@@ -89,6 +89,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js"></script>
   </head>
   <body>
     <nav
@@ -138,7 +144,7 @@
 
     <div
       class="hero-wrap"
-      style="background-image: url('./images/listing-2.jpg');"
+      style="background-image: url('./images/listing-2.jpg');filter:grayscale(1)"
       data-stellar-background-ratio="0.5"
     >
       <div class="overlay"></div>
@@ -148,10 +154,12 @@
           class="row no-gutters slider-text justify-content-center align-items-center"
         >
           <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-end">
-            <div class="text text-center w-100">
-              <h1 class="mb-4">Welcome to Galaxy Elite Real Estate</h1>
+            <div class="text text-center w-100 text-white">
+              <h1 class="mb-4 text-white">
+                Welcome to Galaxy Elite Real Estate
+              </h1>
               <p>
-                <a href="#" class="btn btn-black py-3 px-4"
+                <a href="#" class="btn btn-outline-white py-3 px-4"
                   >Search Properties</a
                 >
               </p>
@@ -201,31 +209,6 @@
                   </div>
                   <div class="col-lg align-items-end">
                     <div class="form-group">
-                      <label for="estateSelection">Estate Selections</label>
-                      <div class="form-field">
-                        <div class="select-wrap">
-                          <div class="icon">
-                            <span class="ion-ios-arrow-down"></span>
-                          </div>
-                          <select
-                            name="estateSelection"
-                            id="estateSelection"
-                            class="form-control"
-                          >
-                            <option value="Residential">Residential</option>
-                            <option value="Holiday">Holiday</option>
-                            <option value="New Development">
-                              New Development
-                            </option>
-                            <option value="Commercial">Commercial</option>
-                            <option value="Land">Land</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg align-items-end">
-                    <div class="form-group">
                       <label for="propertyType">Property Types</label>
                       <div class="form-field">
                         <div class="select-wrap">
@@ -237,16 +220,64 @@
                             id="propertyType"
                             class="form-control"
                           >
-                            <option value="Apartment">Apartment</option>
-                            <option value="Villa">Villa</option>
-                            <option value="Townhouse">Townhouse</option>
-                            <option value="Penthouse">Penthouse</option>
-                            <option value="Duplex">Duplex</option>
-                            <option value="Office Space">Office Space</option>
-                            <option value="Retail Space">Retail Space</option>
-                            <option value="Warehouse">Warehouse</option>
-                            <option value="Industrial">Industrial</option>
-                            <option value="Holiday">Holiday</option>
+                            <optgroup label="Residential">
+                              <option value="Apartment">Apartment</option>
+                              <option value="Villa">Villa</option>
+                              <option value="Townhouse">Townhouse</option>
+                              <option value="Penthouse">Penthouse</option>
+                              <option value="Duplex">Duplex</option>
+                            </optgroup>
+                            <optgroup label="Commercial">
+                              <option value="Office Space">Office Space</option>
+                              <option value="Retail Space">Retail Space</option>
+                              <option value="Warehouse">Warehouse</option>
+                              <option value="Industrial">Industrial</option>
+                            </optgroup>
+                            <optgroup label="Short Stay">
+                              <option value="Beachfront Property">
+                                Beachfront Property
+                              </option>
+                              <option value="Mountain Retreat">
+                                Mountain Retreat
+                              </option>
+                              <option value="Urban Apartment">
+                                Urban Apartment
+                              </option>
+                              <option value="Farmhouse">Farmhouse</option>
+                              <option value="Resort Villa">Resort Villa</option>
+                            </optgroup>
+                            <optgroup label="New Developments">
+                              <option value="Off-Plan Projects">
+                                Off-Plan Projects
+                              </option>
+                              <option value="Newly Constructed Homes">
+                                Newly Constructed Homes
+                              </option>
+                              <option value="Luxury Developments">
+                                Luxury Developments
+                              </option>
+                              <option value="Smart Homes">Smart Homes</option>
+                              <option value="Gated Communities">
+                                Gated Communities
+                              </option>
+                            </optgroup>
+                            <optgroup label="Land">
+                              <option value="Residential Land">
+                                Residential Land
+                              </option>
+                              <option value="Commercial Land">
+                                Commercial Land
+                              </option>
+                              <option value="Agricultural Land">
+                                Agricultural Land
+                              </option>
+                              <option value="Mixed-Use Land">
+                                Mixed-Use Land
+                              </option>
+                              <option value="Recreational Land">
+                                Recreational Land
+                              </option>
+                            </optgroup>
                           </select>
                         </div>
                       </div>
@@ -302,11 +333,13 @@
                   <div class="col-lg align-self-end">
                     <div class="form-group">
                       <div class="form-field">
-                        <input
+                        <button
                           type="submit"
-                          value="Send to WhatsApp"
-                          class="form-control btn btn-primary"
-                        />
+                          class="btn btn-outline-dark w-100 py-3"
+                        >
+                          Request
+                          <i class="bi bi-whatsapp"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -501,7 +534,7 @@
                         style="background-image: url(images/person_1.jpg)"
                       ></div>
                       <div class="pl-3">
-                        <p class="name">Alex </p>
+                        <p class="name">Alex</p>
                         <span class="position">Marketing Manager</span>
                       </div>
                     </div>
@@ -543,7 +576,7 @@
                         style="background-image: url(images/person_3.jpg)"
                       ></div>
                       <div class="pl-3">
-                        <p class="name">Taylor </p>
+                        <p class="name">Taylor</p>
                         <span class="position">Product Manager</span>
                       </div>
                     </div>
@@ -565,7 +598,7 @@
                         style="background-image: url(images/person_8.jpg)"
                       ></div>
                       <div class="pl-3">
-                        <p class="name">Morgan </p>
+                        <p class="name">Morgan</p>
                         <span class="position">Operations Manager</span>
                       </div>
                     </div>
@@ -586,7 +619,7 @@
                         style="background-image: url(images/person_7.jpg)"
                       ></div>
                       <div class="pl-3">
-                        <p class="name">Casey </p>
+                        <p class="name">Casey</p>
                         <span class="position">Customer Service Manager</span>
                       </div>
                     </div>
@@ -620,15 +653,90 @@
             </div>
             <div class="form-group">
               <div class="input-group mb-3">
-                <select
-                  class="bg-transparent input-group-text border-right-0"
-                  style="border-end-end-radius: 0;
-                  border-top-right-radius: 0;"
-                >
-                  <option class="dropdown-item" value="+971">+971</option>
-                  <option class="dropdown-item" value="+91">+91</option>
-                  <option class="dropdown-item" value="+44">+44</option>
-                </select>
+                <div class="w-25" >
+                  <input
+                    list="countryCodes"
+                    placeholder="123"
+                    class="bg-transparent form-control border-right-0"
+                  />
+                  <datalist id="countryCodes">
+                    <option value="+1">United States (+1)</option>
+                    <option value="+44">United Kingdom (+44)</option>
+                    <option value="+971">United Arab Emirates (+971)</option>
+                    <option value="+91">India (+91)</option>
+                    <option value="+61">Australia (+61)</option>
+                    <option value="+81">Japan (+81)</option>
+                    <option value="+49">Germany (+49)</option>
+                    <option value="+33">France (+33)</option>
+                    <option value="+86">China (+86)</option>
+                    <option value="+7">Russia (+7)</option>
+                    <option value="+39">Italy (+39)</option>
+                    <option value="+34">Spain (+34)</option>
+                    <option value="+55">Brazil (+55)</option>
+                    <option value="+27">South Africa (+27)</option>
+                    <option value="+20">Egypt (+20)</option>
+                    <option value="+62">Indonesia (+62)</option>
+                    <option value="+63">Philippines (+63)</option>
+                    <option value="+64">New Zealand (+64)</option>
+                    <option value="+92">Pakistan (+92)</option>
+                    <option value="+880">Bangladesh (+880)</option>
+                    <option value="+212">Morocco (+212)</option>
+                    <option value="+66">Thailand (+66)</option>
+                    <option value="+90">Turkey (+90)</option>
+                    <option value="+82">South Korea (+82)</option>
+                    <option value="(+-246">Barbados (+1-246)</option>
+                    <option value="(+-876">Jamaica (+1-876)</option>
+                    <option value="+974">Qatar (+974)</option>
+                    <option value="+965">Kuwait (+965)</option>
+                    <option value="+968">Oman (+968)</option>
+                    <option value="+973">Bahrain (+973)</option>
+                    <option value="+964">Iraq (+964)</option>
+                    <option value="+961">Lebanon (+961)</option>
+                    <option value="+962">Jordan (+962)</option>
+                    <option value="+218">Libya (+218)</option>
+                    <option value="+94">Sri Lanka (+94)</option>
+                    <option value="+960">Maldives (+960)</option>
+                    <option value="+356">Malta (+356)</option>
+                    <option value="+593">Ecuador (+593)</option>
+                    <option value="+502">Guatemala (+502)</option>
+                    <option value="+233">Ghana (+233)</option>
+                    <option value="+234">Nigeria (+234)</option>
+                    <option value="+31">Netherlands (+31)</option>
+                    <option value="+48">Poland (+48)</option>
+                    <option value="+46">Sweden (+46)</option>
+                    <option value="+47">Norway (+47)</option>
+                    <option value="+358">Finland (+358)</option>
+                    <option value="+34">Denmark (+45)</option>
+                    <option value="+351">Portugal (+351)</option>
+                    <option value="+36">Hungary (+36)</option>
+                    <option value="+48">Poland (+48)</option>
+                    <option value="+30">Greece (+30)</option>
+                    <option value="+52">Mexico (+52)</option>
+                    <option value="+420">Czech Republic (+420)</option>
+                    <option value="+386">Slovenia (+386)</option>
+                    <option value="+389">North Macedonia (+389)</option>
+                    <option value="+375">Belarus (+375)</option>
+                    <option value="+380">Ukraine (+380)</option>
+                    <option value="+65">Singapore (+65)</option>
+                    <option value="+94">Sri Lanka (+94)</option>
+                    <option value="+372">Estonia (+372)</option>
+                    <option value="+373">Moldova (+373)</option>
+                    <option value="+995">Georgia (+995)</option>
+                    <option value="+380">Ukraine (+380)</option>
+                    <option value="+259">Zambia (+259)</option>
+                    <option value="+254">Kenya (+254)</option>
+                    <!-- Add all other countries here -->
+                  </datalist>
+                  <script>
+                    $(document).ready(function () {
+                      $('#countryCode').select2({
+                        placeholder: 'Select a country or code',
+                        allowClear: true,
+                      });
+                    });
+                  </script>
+                </div>
+
                 <input
                   type="text"
                   class="form-control"
@@ -666,7 +774,7 @@
         </div>
       </div>
     </section>
-   
+
     <section class="ftco-section">
       <div class="container">
         <div class="row d-flex">
@@ -700,7 +808,9 @@
                 >
                 </a>
                 <h3 class="heading">
-                  <a href="./blog-single.html">Exploring India’s Real Estate Boom</a>
+                  <a href="./blog-single.html"
+                    >Exploring India’s Real Estate Boom</a
+                  >
                 </h3>
                 <div class="meta mb-3">
                   <div><a href="#">October 7, 2024</a></div>
