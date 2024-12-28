@@ -63,11 +63,10 @@
       content="Premium real estate services tailored to meet your needs, from luxury rentals to investment opportunities."
     />
     <meta name="twitter:image" content="URL-to-your-feature-image.jpg" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="css/animate.css" />
 
@@ -144,7 +143,7 @@
 
     <div
       class="hero-wrap"
-      style="background-image: url('./images/listing-2.jpg');filter:grayscale(1)"
+      style="background-image: url('./images/listing-2.jpg');"
       data-stellar-background-ratio="0.5"
     >
       <div class="overlay"></div>
@@ -195,11 +194,8 @@
                           <div class="icon">
                             <span class="ion-ios-arrow-down"></span>
                           </div>
-                          <select
-                            name="actionType"
-                            id="actionType"
-                            class="form-control"
-                          >
+                          <select name="actionType" id="actionType" class="form-control">
+                            <option value="Sell">Sell</option>
                             <option value="Buy">Buy</option>
                             <option value="Rent">Rent</option>
                           </select>
@@ -215,11 +211,7 @@
                           <div class="icon">
                             <span class="ion-ios-arrow-down"></span>
                           </div>
-                          <select
-                            name="propertyType"
-                            id="propertyType"
-                            class="form-control"
-                          >
+                          <select name="propertyType" id="propertyType" class="form-control">
                             <optgroup label="Residential">
                               <option value="Apartment">Apartment</option>
                               <option value="Villa">Villa</option>
@@ -234,49 +226,25 @@
                               <option value="Industrial">Industrial</option>
                             </optgroup>
                             <optgroup label="Short Stay">
-                              <option value="Beachfront Property">
-                                Beachfront Property
-                              </option>
-                              <option value="Mountain Retreat">
-                                Mountain Retreat
-                              </option>
-                              <option value="Urban Apartment">
-                                Urban Apartment
-                              </option>
+                              <option value="Beachfront Property">Beachfront Property</option>
+                              <option value="Mountain Retreat">Mountain Retreat</option>
+                              <option value="Urban Apartment">Urban Apartment</option>
                               <option value="Farmhouse">Farmhouse</option>
                               <option value="Resort Villa">Resort Villa</option>
                             </optgroup>
                             <optgroup label="New Developments">
-                              <option value="Off-Plan Projects">
-                                Off-Plan Projects
-                              </option>
-                              <option value="Newly Constructed Homes">
-                                Newly Constructed Homes
-                              </option>
-                              <option value="Luxury Developments">
-                                Luxury Developments
-                              </option>
+                              <option value="Off-Plan Projects">Off-Plan Projects</option>
+                              <option value="Newly Constructed Homes">Newly Constructed Homes</option>
+                              <option value="Luxury Developments">Luxury Developments</option>
                               <option value="Smart Homes">Smart Homes</option>
-                              <option value="Gated Communities">
-                                Gated Communities
-                              </option>
+                              <option value="Gated Communities">Gated Communities</option>
                             </optgroup>
                             <optgroup label="Land">
-                              <option value="Residential Land">
-                                Residential Land
-                              </option>
-                              <option value="Commercial Land">
-                                Commercial Land
-                              </option>
-                              <option value="Agricultural Land">
-                                Agricultural Land
-                              </option>
-                              <option value="Mixed-Use Land">
-                                Mixed-Use Land
-                              </option>
-                              <option value="Recreational Land">
-                                Recreational Land
-                              </option>
+                              <option value="Residential Land">Residential Land</option>
+                              <option value="Commercial Land">Commercial Land</option>
+                              <option value="Agricultural Land">Agricultural Land</option>
+                              <option value="Mixed-Use Land">Mixed-Use Land</option>
+                              <option value="Recreational Land">Recreational Land</option>
                             </optgroup>
                           </select>
                         </div>
@@ -291,11 +259,7 @@
                           <div class="icon">
                             <span class="ion-ios-arrow-down"></span>
                           </div>
-                          <select
-                            name="country"
-                            id="country"
-                            class="form-control"
-                          >
+                          <select name="country" id="country" class="form-control">
                             <option value="UAE">UAE</option>
                             <option value="India">India</option>
                             <option value="UK">UK</option>
@@ -312,11 +276,7 @@
                           <div class="icon">
                             <span class="ion-ios-arrow-down"></span>
                           </div>
-                          <select
-                            name="priceLimit"
-                            id="priceLimit"
-                            class="form-control"
-                          >
+                          <select name="priceLimit" id="priceLimit" class="form-control">
                             <option value="5000">5,000</option>
                             <option value="10000">10,000</option>
                             <option value="50000">50,000</option>
@@ -329,44 +289,45 @@
                       </div>
                     </div>
                   </div>
-
+      
                   <div class="col-lg align-self-end">
                     <div class="form-group">
-                      <div class="form-field">
-                        <button
+                      <div class="form-field position-relative">
+                        <input
                           type="submit"
                           class="btn btn-outline-dark w-100 py-3"
-                        >
-                          Request
-                          <i class="bi bi-whatsapp"></i>
-                        </button>
+                          value="Request"
+                          style="padding-left: 2rem;"
+                        />
+                        <i class="bi bi-whatsapp position-absolute" style="top: 50%; left: 1rem; transform: translateY(-50%);"></i>
                       </div>
                     </div>
                   </div>
+                  
                 </div>
               </form>
             </div>
           </div>
         </div>
-
+      
         <script>
           function sendToWhatsApp(event) {
-              event.preventDefault(); // Prevent form submission
-
-              const actionType = document.getElementById("actionType").value;
-              const estateSelection = document.getElementById("estateSelection").value;
-              const propertyType = document.getElementById("propertyType").value;
-              const country = document.getElementById("country").value;
-              const priceLimit = document.getElementById("priceLimit").value;
-
-              const message = `Hello,\nI am searching for a property with the following details: \nAction Type: ${actionType}\nEstate Selection: ${estateSelection}\nProperty Type: ${propertyType}\nCountry: ${country}\nPrice Limit: ${priceLimit}`;
-              const encodedMessage = encodeURIComponent(message);
-              const whatsappPhoneNumber = "+971585939229"; // The recipient's WhatsApp number
-              const whatsappUrl = `https://wa.me/${whatsappPhoneNumber}?text=${encodedMessage}`;
-              window.open(whatsappUrl, "_blank");
+            event.preventDefault(); // Prevent form submission
+      
+            const actionType = document.getElementById("actionType").value;
+            const propertyType = document.getElementById("propertyType").value;
+            const country = document.getElementById("country").value;
+            const priceLimit = document.getElementById("priceLimit").value;
+      
+            const message = `Hello,\nI am searching for a property with the following details: \nAction Type: ${actionType}, \nProperty Type: ${propertyType}, \nCountry: ${country}, \nPrice Limit: ${priceLimit}.`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappPhoneNumber = "+971585939229"; // The recipient's WhatsApp number
+            const whatsappUrl = `https://wa.me/${whatsappPhoneNumber}?text=${encodedMessage}`;
+            window.open(whatsappUrl, "_blank");
           }
         </script>
       </div>
+      
     </section>
 
     <section class="ftco-section ftco-fullwidth">

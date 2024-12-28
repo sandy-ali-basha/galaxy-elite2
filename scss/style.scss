@@ -1,7 +1,7 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
 
-$font-primary: 'Roboto',Arial, sans-serif;
+$font-primary: 'Poppins',Arial, sans-serif;
 
 $white: #f7f7f7;
 $black: #0a0a0a;
@@ -9,7 +9,6 @@ $black: #0a0a0a;
 
 $primary: #333533;
 $secondary: #4e4e4c;
-
 
 
 @mixin border-radius($radius) {
