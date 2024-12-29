@@ -10464,11 +10464,11 @@ a.text-dark:focus {
 
 body {
   font-family: "Poppins", Arial, sans-serif;
-  background: #fff;
+  background: #4e4e4c;
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  color: #666666;
+  color: #fffbfb;
 }
 body.menu-show {
   overflow: hidden;
