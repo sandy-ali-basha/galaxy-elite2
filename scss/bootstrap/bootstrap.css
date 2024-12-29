@@ -3886,7 +3886,7 @@ input[type=button].btn-block {
   color: rgba(0, 0, 0, 0.5);
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(255 255 255 / 70%);
 }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(0, 0, 0, 0.3);
@@ -5599,7 +5599,7 @@ button.bg-dark:focus {
 }
 
 .bg-white {
-  background-color: #fff !important;
+  background-clolor: #4e4e4c !important;
 }
 
 .bg-transparent {
@@ -8705,7 +8705,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-black-50 {
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgb(255 255 255 / 50%) !important;
 }
 
 .text-white-50 {
@@ -8794,7 +8794,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .table td,
   .table th {
-    background-color: #fff !important;
+    background-clolor: #4e4e4c !important;
   }
   .table-bordered th,
   .table-bordered td {
