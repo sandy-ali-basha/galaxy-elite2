@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5,
 			color: $black;
 		}
 		@include media-breakpoint-down(md){
-			color: $white;
+			color: $primary;
 		}
 	}
 	
@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5,
 					padding-left: 0;
 					padding-right: 0;
 					padding-bottom: 0;
-					color: $white;
+					color: $primary;
 				}
 			}
 
@@ -167,21 +167,21 @@ h1, h2, h3, h4, h5,
 			}
 			&.cta {
 				> a {
-					color: $white;
+					color: $primary;
 					border: 1px solid $primary;
 					padding-top: .5rem;
 					padding-bottom: .5rem;
 					padding-left: 18px;
 					padding-right: 18px;
 					margin-top: 4px;
-					background: $primary;
+					color: $white;
 					@include border-radius(2px);
 					span {
 						display: inline-block;
-						color: $white;
+						color: $primary;
 					}
 					&:hover{
-						background: $primary;
+						color: $white;
 						border: 1px solid $primary;
 					}
 				}
@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5,
 			&.cta {
 				> a {
 					color: $white !important;
-					background: $primary;
+					color: $white;
 					border: none !important;
 					padding-top: .5rem!important;
 					padding-bottom: .5rem !important;
@@ -342,7 +342,7 @@ h1, h2, h3, h4, h5,
 	}
 	.overlay-2{
 		z-index: -2;
-		background: $primary;
+		color: $white;
 		@include gradient-background-two();
 		opacity: .7;
 		width: 50%;
@@ -378,10 +378,10 @@ h1, h2, h3, h4, h5,
 		.icon{
 			width: 70px;
 			height: 70px;
-			background: $primary;
+			color: $white;
 			@include border-radius(50%);
 			span{
-				color: $white;
+				color: $primary;
 			}
 		}
 		.heading-title{
@@ -398,7 +398,7 @@ h1, h2, h3, h4, h5,
 			}
 			span{
 				font-family: $font-primary;
-				color: $white;
+				color: $primary;
 			}
 		}
 	}
@@ -461,10 +461,10 @@ h1, h2, h3, h4, h5,
 			width: 70px;
 			height: 70px;
 			border-radius: 0 50% 50% 50%;
-			background: $primary;
+			color: $white;
 			span{
 				font-size: 30px;
-				color: $white;
+				color: $primary;
 			}
 		}
 	}
@@ -543,7 +543,7 @@ h1, h2, h3, h4, h5,
 		  color: rgba(0,0,0,.4);
 		}
 		&:focus, &:active {
-			border-color: $white;
+			border-color: $primary;
 		}
 	}
 	textarea.form-control {
@@ -651,7 +651,7 @@ h1, h2, h3, h4, h5,
 }
 
 .bg-primary{
-	background: $primary;
+	color: $white;
 }
 
 
@@ -679,7 +679,7 @@ h1, h2, h3, h4, h5,
 			color :$primary;
 			&:hover {
 				border: 1px solid transparent;
-				background: $primary;
+				color: $white;
 				color :$white;
 			}
 		}
@@ -689,10 +689,10 @@ h1, h2, h3, h4, h5,
 		background: none;
 		@include border-radius(5px);
 		border-width: 1px;
-		color: $white;
+		color: $primary;
 		&:hover, &:focus, &:active {
 			background: $white;
-			border-color: $white;
+			border-color: $primary;
 			color: $primary;
 		}
 	}
@@ -800,8 +800,8 @@ h1, h2, h3, h4, h5,
 			width: 60px;
 			height: 60px;
 			border-radius: 50%;
-			background: $primary;
-			color: $white;
+			background: $white;
+			color: $primary;
 			font-size: 20px;
 			opacity: 0;
 			@include transition(.3s);
@@ -821,7 +821,7 @@ h1, h2, h3, h4, h5,
 					height: 40px;
 				}
 				h3{
-					color: $white;
+					color: $primary;
 					font-size: 18px;
 				}
 			}
@@ -834,7 +834,7 @@ h1, h2, h3, h4, h5,
 					border: 1px solid rgba(255,255,255,.4);
 					span{
 						font-size: 20px;
-						color: $white;
+						color: $primary;
 					}
 				}
 			}
@@ -908,10 +908,10 @@ h1, h2, h3, h4, h5,
 			right: 0;
 			width: 40px;
 			height: 40px;
-			background: $primary;
+			color: $white;
 			border-radius: 50% 0 0 0;
 			span{
-				color: $white;
+				color: $primary;
 			}
 		}
 	}
@@ -945,11 +945,11 @@ h1, h2, h3, h4, h5,
 			font-size: 20px;
 			font-weight: 600;
 			a{
-				color: $white;
+				color: $primary;
 			}
 		}
 		.btn-link{
-			color: $white;
+			color: $primary;
 		}
 	}
 	.location{
@@ -959,8 +959,8 @@ h1, h2, h3, h4, h5,
 		right: 20px;
 		span{
 			padding: 10px;
-			background: $primary;
-			color: $white;
+			background: $white;
+			color: $primary;
 		}
 	}
 }
@@ -1193,15 +1193,15 @@ h1, h2, h3, h4, h5,
 		}
 	}
 	&.active{
-		background: $primary;
+		background: $white;
 		.icon{
 			span{
-				color: $white;
+				color: $primary;
 			}
 		}
 		.media-body{
 			h3{
-				color: $white;
+				color: $primary;
 			}
 			color: rgba(255,255,255,.8);
 			p{
@@ -1213,15 +1213,15 @@ h1, h2, h3, h4, h5,
 		.icon{
 			width: 90px;
 			height: 90px;
-			background: $primary;
+			color: $white;
 			@include border-radius(50%);
 			span{
-				color: $white;
+				color: $primary;
 				font-size: 30px;
 			}
 		}
 		h3{
-			color: $white;
+			color: $primary;
 		}
 		.media-body{
 			color: rgba(255,255,255,.8);
@@ -1239,12 +1239,12 @@ h1, h2, h3, h4, h5,
 		position: relative;
 		width: 80px;
 		height: 80px;
-		background: $primary;
+		color: $white;
 		@include border-radius(50%);
 		@include transition(.3s);
 		span{
 			font-size:40px;
-			color: $white;
+			color: $primary;
 		}
 	}
 	.media-body{
@@ -1257,9 +1257,9 @@ h1, h2, h3, h4, h5,
 	}
 	&:hover{
 		.icon{
-			background: $primary;
+			color: $white;
 			span{
-				color: $white;
+				color: $primary;
 			}
 		}
 	}
@@ -1277,7 +1277,7 @@ h1, h2, h3, h4, h5,
 		bottom: 0;
 		content: '';
 		opacity: .3;
-		background: $primary;
+		color: $white;
 	}
 	.text-wrapper{
 		width: 100%;
@@ -1440,7 +1440,7 @@ textarea.form-control {
 .ftco-footer {
 	font-size: 16px;
 	padding: 7em 0;
-	background: $primary;
+	color: $white;
 	color:rgba(255,255,255,.9);
 	.ftco-footer-logo {
 		text-transform: uppercase;
@@ -1449,7 +1449,7 @@ textarea.form-control {
 	.ftco-footer-widget {
 		h2 {
 			font-weight: normal;
-			color: $white;
+			color: $primary;
 			margin-bottom: 30px;
 			font-size: 20px;
 			font-weight: 600;
@@ -1460,7 +1460,7 @@ textarea.form-control {
 				a{
 					color: rgba(255,255,255,.8);
 					span{
-						color: $white;
+						color: $primary;
 					}
 				}
 			}
@@ -1512,7 +1512,7 @@ textarea.form-control {
 				transform: translate(-50%, -50%);
 			}
 			&:hover {
-				color: $white;
+				color: $primary;
 			}
 		}
 	}
@@ -1599,7 +1599,7 @@ textarea.form-control {
    border: 1px solid $primary;
    // border-radius: 15px;
    @include border-radius(50%);
-   background: $primary;
+   color: $white;
    cursor: pointer;
    position: relative;
    text-align: center;
@@ -1616,7 +1616,7 @@ textarea.form-control {
   -webkit-animation: 1.6s ease infinite wheel-up-down;
  -moz-animation: 1.6s ease infinite wheel-up-down;
   animation: 1.6s ease infinite wheel-up-down;
-  color: $white;
+  color: $primary;
   font-size: 24px;
 }
 @-webkit-keyframes wheel-up-down {
@@ -1704,7 +1704,7 @@ textarea.form-control {
 			width: 50px;
 			height: 1px;
 			margin-top: -1px;
-			background: $primary;
+			color: $white;
 		}	
 		&:before{
 			position: absolute;
@@ -1715,7 +1715,7 @@ textarea.form-control {
 			width: 50px;
 			height: 1px;
 			margin-top: -1px;
-			background: $primary;
+			color: $white;
 		}		
 	}
 	h2{
@@ -1731,7 +1731,7 @@ textarea.form-control {
 		}
 		h2{
 			font-size: 40px;
-			color: $white;
+			color: $primary;
 		}
 		p{
 			color: rgba(255,255,255,.9);
@@ -1784,7 +1784,7 @@ textarea.form-control {
 			&:hover,&:focus{
 				span{
 					&:before{
-						color: $white;
+						color: $primary;
 					}
 				}
 			}
@@ -1824,7 +1824,7 @@ textarea.form-control {
 			border-radius: 50%;
 			background: rgba(0,0,0,.1);
 			&.active {
-				background: $primary;
+				color: $white;
 			}
 		}
 	}
@@ -1998,7 +1998,7 @@ textarea.form-control {
 		bottom: 0;
 		content: '';
 		opacity: 0;
-		background: $primary;
+		color: $white;
 		@include media-breakpoint-up(lg){
 			opacity: .3;
 		}
@@ -2110,7 +2110,7 @@ textarea.form-control {
 				width: 40px;
 				font-size: 18px;
 				padding-top: 2px;
-				color: $white;
+				color: $primary;
 			}
 			
 		}
@@ -2154,8 +2154,8 @@ textarea.form-control {
 			}
 			&.active {
 				a, span {
-					background: $primary;
 					color: $white;
+					color: $primary;
 					border: 1px solid transparent;
 				}
 			}
@@ -2181,12 +2181,12 @@ textarea.form-control {
 		.icon{
 			width: 60px;
 			height: 60px;
-			background: $primary;
+			color: $white;
 			border-radius: 50%;
 			margin: 0 auto;
 			span{
 				font-size: 20px;
-				color: $white;
+				color: $primary;
 			}
 		}
 		.border-height{
@@ -2253,7 +2253,7 @@ textarea.form-control {
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: $white;
+	color: $primary;
 	letter-spacing: .1em;
 	> div {
 		display: inline-block;
@@ -2332,7 +2332,7 @@ textarea.form-control {
 				font-weight: 400;
 				border-radius: 4px;
 				&:hover {
-					color: $white;
+					color: $primary;
 					background: lighten($black, 0%);
 				}
 			}
